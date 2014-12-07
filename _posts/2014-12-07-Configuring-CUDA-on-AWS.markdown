@@ -2,7 +2,7 @@
 layout: post
 title:  "Configuring Cuda on AWS for Mumax3"
 date:   2014-12-07 10:10:25
-categories: aws graphics cuda mumax mumax3
+categories: magnets
 ---
 I've been working on simulating magnetic behavior with [Graham Rowlands][graham] using [mumax3][mumax].  Mumax is a software package for simulating the magnetic dynamics of a material, and it uses GPU acceleration with cuda to get a considerable boost.  
 
