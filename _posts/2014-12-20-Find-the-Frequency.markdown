@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Configuring Cuda on AWS for Mumax3"
+title:  "Find the Frequency"
 date:   2014-12-07 10:10:25
 categories: magnets
 ---
