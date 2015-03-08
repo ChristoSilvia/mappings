@@ -1,0 +1,12 @@
+# Site settings
+title: Mappings
+email: cps232@cornell.edu
+description: > # this means to ignore newlines until "baseurl:"
+  In which I work through problems and write explorable explanations.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: @ChristoSilvia
+github_username:  ChristoSilvia
+
+# Build settings
+markdown: kramdown
