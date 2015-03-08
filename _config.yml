@@ -2,7 +2,8 @@
 title: Mappings
 email: cps232@cornell.edu
 description: > # this means to ignore newlines until "baseurl:"
-  In which I work through problems and write explorable explanations.
+  A blog about magical and mundane mathematics, and strange and unexplained
+  physical phenomena.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://christosilvia.github.io" # the base hostname & protocol for your site
 twitter_username: ChristoSilvia
