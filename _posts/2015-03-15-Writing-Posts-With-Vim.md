@@ -5,14 +5,20 @@ date: 2015-03-15 18:31:00
 categories: vim git meta
 ---
 
-As I sit down to write about (making mathematica-style manipulate on the web)[www.bro.ken], 
+I'm going to lie to you in this blog post.  As you read this, I think that you're assuming I sat down 
+to write this (after some inspiration of course!) and then wrote the whole thing in one go.  At least, I 
+bet that you thought that I wrote the beginning before the end.  Wrong.  Here's the completed paragraph:
+
+
+
+As I sit down to write about [making mathematica-style manipulate on the web](www.bro.ken), 
 I come across a problem.  That problem is apostrophes.  Vim does some markdown syntax 
 highlighting.  Right now vim is making the string "Writing Jekyll blog posts with Vim and Git"
 appear red to me.  Now, I want to take a screenshot.  I am running ubuntu, with the (i3)[i3wm.org] 
 window manager installed.  I google "screenshots ubuntu" (note that the text in quotes is red), and I get
-an (askubuntu post)[http://askubuntu.com/questions/6558/what-screenshot-tools-are-available] (which just 
+an [askubuntu post](http://askubuntu.com/questions/6558/what-screenshot-tools-are-available) (which just 
 taught me that `"+p` is the vim paste command), and the askubuntu post tells me that there is a tool called
-(shutter)[shutter-project.org] which lets me take screenshots on ubuntu.
+[shutter](shutter-project.org) which lets me take screenshots on ubuntu.
 
 Now I know what to do:
 ```bash
@@ -74,16 +80,22 @@ footer.html header.html head.html
 
 Assets is probably not in includes.  Do I have to create it?  Yes, back on the (official jekyll site)[http://jekyllrb.com/docs/posts/] it says that I need to make a directory called "something like `assets` or `downloads`, into which any images, downloads, or other resources are placed."  Okay.
 
-```bash
-~/dev/jekyll-blog$ mkdir assets
-~/dev/jekyll-blog$ mv ~/Workspace\ 2_001.png assets
-~/dev/jekyll-blog$ ls assets
-Workspace 2_001.png
-~/dev/jekyll-blog$ mv assets/Workspace\ 2_001.png assets/red.png
-```
+`~/dev/jekyll-blog$ mkdir assets`
+
+`~/dev/jekyll-blog$ mv ~/Workspace\ 2_001.png assets`
+
+`~/dev/jekyll-blog$ ls assets`
+
+`Workspace 2_001.png`
+
+`~/dev/jekyll-blog$ mv assets/Workspace\ 2_001.png assets/red.png`
 
 Yay, it's here.  It should appear below.
-![Fooled you]({{ site.url }}/assets/red.png).
+![If it's not broken this should be an image]({{ site.url }}/assets/red.png).
+
+Of course, I go to look and it's not there.  Wtf.  
+
+Maybe the directory needs to be named `_assets` and not `assets`?  That doesn't fix it.
 
 ### Let's start over
 
@@ -94,4 +106,4 @@ appear red to me.
 
 ![Ahaha sucker]({{ site.url }}/assets/red.png)
 
-
+I give up.
