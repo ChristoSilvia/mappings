@@ -23,8 +23,6 @@ I heard about MathJax from poking around in the IPython configuration options,
 
 First step: check what is in the home directory of my Jekyll site.
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 <div>
 $$ x^2 + y^2 = r^2 $$
 </div>
