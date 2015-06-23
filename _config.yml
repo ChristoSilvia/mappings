@@ -9,4 +9,4 @@ twitter_username: ChristoSilvia
 github_username:  ChristoSilvia
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
