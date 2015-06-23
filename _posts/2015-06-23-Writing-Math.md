@@ -58,6 +58,9 @@ which produced:
 \end{sudoku}
 {% endlatex %}
 
+...and it didn't work the first time.
+I try removing the added section in the `_config.yml`.
+
 
 If I want to write blog posts about math, at some point I'm going to need
 	to figure out how to write mathematical notation.
