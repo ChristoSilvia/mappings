@@ -5,6 +5,26 @@ date: 2015-06-23 16:00:00
 categories: jekyll math mathjax latex notation
 ---
 
+I am configuring Latex preprocessors for math blogging. 
+The first one I've tried is MathJax, which does client-side rendering.
+It seems slow on my laptop, but it is extremely simple.
+I got it working in under a half an hour.
+
+I found out about [liquid latex](http://www.flx.cat/jekyll/2013/11/10/liquid-latex-jekyll-plugin.html)
+	from googling, but that website is very difficult to read.
+Fortunately, they link to the [github repo](https://github.com/fgalindo/jekyll-liquid-latex-plugin).
+The repo is [MIT Licensed](https://en.wikipedia.org/wiki/MIT_License), and the installation
+	instructions direct me to copy `liquid_latex.rb` to my `_plugins` directory.
+
+{% highlight bash %}
+$ wget https://raw.githubusercontent.com/fgalindo/jekyll-liquid-latex-plugin/master/liquid_latex.rb
+{% endhighlight %}
+
+One minor point of confusion is that nobody told me that I would have to create my own `_plugins`
+	directory.
+From there, the configuration instructions direct me to update my `_config.yml`.
+I copied the config information verbatum into my `_config.yml`.
+
 If I want to write blog posts about math, at some point I'm going to need
 	to figure out how to write mathematical notation.
 In all of high school, it never occurred to me that people needed to have a way
