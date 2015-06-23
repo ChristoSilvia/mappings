@@ -28,7 +28,7 @@ Unfortunately, it didn't work when I copied in the defaults, but it worked with 
 
 Next, I tried it out:
 
-{% latex usepackages=sudoku %}
+{% latex density=72 usepackages=sudoku %}
 \begin{sudoku}
 | |2| | |3| |9| |7|.
 | |1| | | | | | | |.
