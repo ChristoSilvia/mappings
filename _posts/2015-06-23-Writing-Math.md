@@ -25,6 +25,40 @@ One minor point of confusion is that nobody told me that I would have to create 
 From there, the configuration instructions direct me to update my `_config.yml`.
 I copied the config information verbatum into my `_config.yml`.
 
+Next, I tried it out:
+```
+{% latex usepackages=sudoku %}
+\begin{sudoku}
+| |2| | |3| |9| |7|.
+| |1| | | | | | | |.
+|4| |7| | | |2| |8|.
+| | |5|2| | | |9| |.
+| | | |1|8| |7| | |.
+| |4| | | |3| | | |.
+| | | | |6| | |7|1|.
+| |7| | | | | | | |.
+|9| |3| |2| |6| |5|.
+\end{sudoku}
+{% endlatex %}
+```
+
+which produced:
+
+{% latex usepackages=sudoku %}
+\begin{sudoku}
+| |2| | |3| |9| |7|.
+| |1| | | | | | | |.
+|4| |7| | | |2| |8|.
+| | |5|2| | | |9| |.
+| | | |1|8| |7| | |.
+| |4| | | |3| | | |.
+| | | | |6| | |7|1|.
+| |7| | | | | | | |.
+|9| |3| |2| |6| |5|.
+\end{sudoku}
+{% endlatex %}
+
+
 If I want to write blog posts about math, at some point I'm going to need
 	to figure out how to write mathematical notation.
 In all of high school, it never occurred to me that people needed to have a way
