@@ -63,7 +63,7 @@ At this point, the applicant should be writing the essays for their schools.
 The essays, like the GRE scores, can disqualify you, but cannot help much.
 DO NOT start your essay with :
 
-{% latex density=50 %}
+{% latex density=100 %}
 Let $G$ be a finite simple group, and let X be a set, and let $\Phi$ be a $G$-representation of $X$ \dots
 {% endlatex %}
 
