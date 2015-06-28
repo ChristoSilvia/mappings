@@ -11,7 +11,10 @@ github_username:  ChristoSilvia
 # Build settings
 markdown: kramdown
 
-# Liquid-LaTeX plugin
+gems:
+ - jekyll-feed
+
+#Liquid-LaTeX plugin
 #liquid_latex:
 #        debug: false
 #        density: 300
