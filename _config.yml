@@ -14,6 +14,10 @@ markdown: kramdown
 gems:
  - jekyll-feed
 
+liquid_latex:
+        density: 140
+        usepackages: pst-all, pst-3dplot, amsmath
+
 #Liquid-LaTeX plugin
 #liquid_latex:
 #        debug: false

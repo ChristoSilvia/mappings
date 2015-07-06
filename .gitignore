@@ -1,4 +1,5 @@
 _site
+latex
 .sass-cache
 *.swp
 *~
