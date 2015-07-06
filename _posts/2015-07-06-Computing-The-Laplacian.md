@@ -144,13 +144,33 @@ Therefore, for every element of a function's array representaiton,
 We accomplish this by indexing the serpinski gasket with a space-filling path.
 We will create a path which touches every point in the mth-level serpinski gasket
 	exactly once (note that this path is a spanning tree).
+We will refer to this path as the "spiked path".
 The path will start at one endpoint and finish at the other.
 We will then construct another path which starts and ends at the same points
 	as the first path, does not touch the third boundary point at all,
 	touches all of the vertices, and does not use any of the edges
 	that the first path used.
+We will refer to this path as the "flat path".
 We can inductively construct these paths.
 
-Consider the paths
+### Base Case
+
+Consider the paths:
+
+![base-spike](https://github.com/ChristoSilvia/mappings/blob/master/_assets/spike_0.png)
+
+and
+
+![base-flat](https://github.com/ChristoSilvia/mappings/blob/master/_assets/flat_0.png)
+
+Note that the spiked path touches every point once.
+That path touches two corners once and one corner twice.
+Next, note that the flat path starts and ends at the same place as the
+	spiked path, and doesn't touch the one other vertex.
+It (trivially) touches every other point.
+Therefore, for the 0th level serpinski gasket, we have constructed
+	paths which satisfy our conditions.
+
+
 
 
