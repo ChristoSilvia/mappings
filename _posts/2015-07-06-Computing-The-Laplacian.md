@@ -157,11 +157,11 @@ We can inductively construct these paths.
 
 Consider the paths:
 
-![base-spike](https://github.com/ChristoSilvia/mappings/blob/master/_assets/spike_0.png)
+![base-spike](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_0.png)
 
 and
 
-![base-flat](https://github.com/ChristoSilvia/mappings/blob/master/_assets/flat_0.png)
+![base-flat](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_0.png)
 
 Note that the spiked path touches every point once.
 That path touches two corners once and one corner twice.
