@@ -157,7 +157,7 @@ We can inductively construct these paths.
 
 Consider the paths:
 
-![base-spike](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spike_0.png)
+![base-spike](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_0.png)
 
 and
 
@@ -171,6 +171,52 @@ It (trivially) touches every other point.
 Therefore, for the 0th level serpinski gasket, we have constructed
 	paths which satisfy our conditions.
 
+### Inductive Step
+
+We want to construct a pair of spiked path and flat path for the m+1-th
+	level serpinski gasket, if the m-th level serpinski gasket has
+	such a path.
+Note that if the m-th level serpinski gasket has a pair of spiked path
+	and flat path, then we can put those paths into one of the three
+	subtriangles of the serpinski gasket.
+
+To construct a m+1-th spiked path, we join the lower left and upper vertices
+	of the triangle with the m-th spiked path, so that the intersetion
+	between the lower-left and lower-right triangles is covered by this path.
+Next, the upper triangle is traversed from left to right by a spiked path.
+Finally, the lower-left triangle is traversed from top to bottom-right by a flat path.
+This path joins the lower left with the lower right, and touches the top vertex, 
+	and is a spanning tree.
+Therefore, this path is an m+1-th spiked path.
+
+To construct an m+1-th flat path, we replace the spiked paths with flat paths in 
+	the previous construction.
+Note that since the m-th flat path is a flat path, when superimposed with the m-th
+	spiked path they do not overlap, and together use all of the edges on
+	the serpinski gasket.
+The m+1-th flat path does not include the top vertex because the m-th flat path
+	doesn't.
+This satisfies all of the properties that an m+1-th flat path needs to satisfy.
+
+Below, we feature some of these paths.
+
+#### 1st spiked path
+
+![spiked-1](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_1.png)
+
+![flat-1](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_1.png)
+
+#### 2st spiked path
+
+![spiked-2](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_2.png)
+
+![flat-2](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_2.png)
+
+#### 3st spiked path
+
+![spiked-3](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_3.png)
+
+![flat-3](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_3.png)
 
 
 
