@@ -125,8 +125,32 @@ Once we begin to start considering computing the energy laplacian matrix,
 The graph representations at level 0 of the serpinski gasket is just
 	a triangle:
 
-<img src="/_assets/vertices_level_0.png" />
+![level-0]( https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/vertices_level_0.png)
 
-<img src="/assets/vertices_level_0.png" />
+Add one more level:
 
-![level-0]( /_assets/vertices_level_0.png)
+![level-0]( https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/vertices_level_1.png)
+
+And so on.
+If we're working with an mth level approximation, we're going to represent
+	a function by storing an array of its values on the mth level
+	graph approximation to the serpinski gasket.
+The formula we need to use includes differences between a vertex and its
+	neighbors.
+Therefore, for every element of a function's array representaiton,
+	we need a way of efficiently figuring out which elements are adjacent
+	to it.
+
+We accomplish this by indexing the serpinski gasket with a space-filling path.
+We will create a path which touches every point in the mth-level serpinski gasket
+	exactly once (note that this path is a spanning tree).
+The path will start at one endpoint and finish at the other.
+We will then construct another path which starts and ends at the same points
+	as the first path, does not touch the third boundary point at all,
+	touches all of the vertices, and does not use any of the edges
+	that the first path used.
+We can inductively construct these paths.
+
+Consider the paths
+
+
