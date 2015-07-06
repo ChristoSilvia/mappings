@@ -157,7 +157,7 @@ We can inductively construct these paths.
 
 Consider the paths:
 
-![base-spike](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_0.png)
+![base-spike](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spike_0.png)
 
 and
 
