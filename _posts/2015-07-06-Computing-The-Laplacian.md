@@ -142,6 +142,9 @@ Therefore, for every element of a function's array representaiton,
 	to it.
 
 We accomplish this by indexing the serpinski gasket with a space-filling path.
+We will store an additional path in memory.
+We will use these two paths to find all adjacent vertices.
+
 We will create a path which touches every point in the mth-level serpinski gasket
 	exactly once (note that this path is a spanning tree).
 We will refer to this path as the "spiked path".
@@ -152,6 +155,8 @@ We will then construct another path which starts and ends at the same points
 	that the first path used.
 We will refer to this path as the "flat path".
 We can inductively construct these paths.
+If we have constructed these paths according to plan, a point's four
+	neighbors will be its neighbors on the spiked path and flat path.
 
 ### Base Case
 
@@ -204,19 +209,35 @@ Below, we feature some of these paths.
 
 ![spiked-1](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_1.png)
 
+#### 1st flat path
+
 ![flat-1](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_1.png)
 
-#### 2st spiked path
+#### 2nd spiked path
 
 ![spiked-2](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_2.png)
 
+#### 2nd flat path
+
 ![flat-2](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_2.png)
 
-#### 3st spiked path
+#### 3rd spiked path
 
 ![spiked-3](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_3.png)
 
+#### 3rd flat path
+
 ![flat-3](https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_3.png)
 
+
+Using this layout scheme, we can extract some of the invariants which
+	we care about.
+Let's start with the eigenvalues:
+
+When {% latex %} $m = 1$ {% endlatex %},
+	{% latex %} $u = \left( \begin{matrix} 1 \\ 1 \\ 0 \end{matrix} \right)$
+	{% endlatex %}, and 
+	{% latex %} $v = \left( \begin{matrix} 1 \\ -1 \\ 0 \end{matrix} \right)$
+	{% endlatex %}
 
 
